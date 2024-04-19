@@ -7,4 +7,5 @@ edition = "2021"
 crate-type = ["dylib", "lib"]
 
 [dependencies]
-spirv-std = { git = "https://github.com/LemonHX/rust-gpu", branch = "update_1.78.0", optional = true }
+#spirv-std = { git = "https://github.com/LemonHX/rust-gpu", branch = "update_1.78.0"}
+spirv-std = {git = "https://github.com/LegNeato/rust-gpu", branch = "update-to-latest-nightly"}

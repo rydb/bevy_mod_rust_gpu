@@ -4,7 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-spirv-builder = { git = "https://github.com/LemonHX/rust-gpu", branch = "update_1.78.0", features = ["use-compiled-tools"]}
-
+#spirv-builder = { git = "https://github.com/LemonHX/rust-gpu", branch = "update_1.78.0", features = ["use-compiled-tools"]}
+spirv-builder = {git = "https://github.com/LegNeato/rust-gpu", branch = "update-to-latest-nightly", features = ["use-compiled-tools"]}
+post_processing = {path = "post_processing"}
 # [features]
 # rust-gpu-builder = ["dep:spirv-builder"]
