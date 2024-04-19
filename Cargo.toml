@@ -1,3 +1,6 @@
+# [workspace]
+# members = ["assets/shaders/rust_gpu_shaders"]
+
 [package]
 name = "bevy_mod_rust_gpu"
 version = "0.1.0"
@@ -7,11 +10,8 @@ edition = "2021"
 
 [dependencies]
 bevy = { version = "0.13", features = ["shader_format_spirv"] }
-serde = "1.0.193"
-# Waiting on https://github.com/EmbarkStudios/rust-gpu/pull/1134 due to bevy msrv
-spirv-builder = { git = "https://github.com/LegNeato/rust-gpu", branch = "update-to-1.76.0", optional = true }
-#spirv-builder = { git = "https://github.com/EmbarkStudios/rust-gpu", rev = "83f8c72f04a6af673b0533a0f03527b7756f883e", optional = true }
 
+serde = "1.0.193"
+rust_gpu_shaders = { path = "assets/shaders/rust_gpu_shaders"}
 [features]
-rust-gpu-builder = ["dep:spirv-builder"]
 file_watcher = ["bevy/file_watcher"]

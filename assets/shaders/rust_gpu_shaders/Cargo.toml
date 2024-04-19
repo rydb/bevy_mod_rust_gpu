@@ -1,0 +1,10 @@
+[package]
+name = "rust_gpu_shaders"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+spirv-builder = { git = "https://github.com/LemonHX/rust-gpu", branch = "update_1.78.0", features = ["use-compiled-tools"]}
+
+# [features]
+# rust-gpu-builder = ["dep:spirv-builder"]

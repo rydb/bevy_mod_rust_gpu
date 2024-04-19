@@ -183,7 +183,7 @@ impl FromWorld for PostProcessPipeline {
 
         // The HLSL Registry Holds HLSL shader handles so the file watcher will watch for updates and cause a new spv file to be generated when changes are made.
         let shader = RustGpuRegistry::load_from_world(
-            "shaders/post_processing/src/lib.rs",
+            "shaders/rust_gpu_shaders/post_processing/src/lib.rs",
             "shaders/post_processing.spv",
             world,
         );
