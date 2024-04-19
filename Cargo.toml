@@ -1,5 +1,5 @@
-# [workspace]
-# members = ["assets/shaders/rust_gpu_shaders"]
+[workspace]
+members = ["assets/shaders/rust_gpu_shaders"]
 
 [package]
 name = "bevy_mod_rust_gpu"
@@ -10,6 +10,7 @@ edition = "2021"
 
 [dependencies]
 bevy = { version = "0.13", features = ["shader_format_spirv"] }
+spirv-builder = {git = "https://github.com/LegNeato/rust-gpu", branch = "update-to-latest-nightly", features = ["use-compiled-tools"]}
 
 serde = "1.0.193"
 rust_gpu_shaders = { path = "assets/shaders/rust_gpu_shaders"}

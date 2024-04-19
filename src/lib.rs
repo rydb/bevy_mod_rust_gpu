@@ -9,10 +9,10 @@ use bevy::{
 };
 use serde::{Deserialize, Serialize};
 
-#[cfg(feature = "rust-gpu-builder")]
+//#[cfg(feature = "rust-gpu-builder")]
 use spirv_builder::{MetadataPrintout, ShaderPanicStrategy, SpirvBuilder};
 
-#[cfg(feature = "rust-gpu-builder")]
+//#[cfg(feature = "rust-gpu-builder")]
 use std::{env, fs};
 
 pub struct RustGpuPlugin;
@@ -99,7 +99,7 @@ impl AssetLoader for RustGpuLoader {
                 .parent()
                 .unwrap(),
         );
-        #[cfg(feature = "rust-gpu-builder")]
+        //#[cfg(feature = "rust-gpu-builder")]
         {
             let builder = SpirvBuilder::new(crate_dir.clone(), "spirv-unknown-vulkan1.1")
                 .print_metadata(MetadataPrintout::None)
