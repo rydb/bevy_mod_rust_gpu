@@ -7,6 +7,7 @@ use spirv_std::{glam, spirv, Image, Sampler};
 #[allow(unused_imports)]
 use spirv_std::num_traits::Float;
 
+
 #[repr(C)]
 pub struct PostProcessSettings {
     intensity: f32,

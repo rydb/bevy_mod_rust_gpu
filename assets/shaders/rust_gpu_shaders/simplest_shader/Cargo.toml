@@ -1,0 +1,11 @@
+[package]
+name = "simplest_shader"
+version = "0.0.0"
+edition = "2021"
+
+[lib]
+crate-type = ["dylib", "lib"]
+
+[dependencies]
+#spirv-std = { git = "https://github.com/LemonHX/rust-gpu", branch = "update_1.78.0"}
+spirv-std = {git = "https://github.com/LegNeato/rust-gpu", branch = "update-to-latest-nightly"}

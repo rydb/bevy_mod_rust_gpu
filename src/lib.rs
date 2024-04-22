@@ -15,6 +15,9 @@ use spirv_builder::{MetadataPrintout, ShaderPanicStrategy, SpirvBuilder};
 //#[cfg(feature = "rust-gpu-builder")]
 use std::{env, fs};
 
+pub mod rave_material;
+
+
 pub struct RustGpuPlugin;
 
 impl Plugin for RustGpuPlugin {
